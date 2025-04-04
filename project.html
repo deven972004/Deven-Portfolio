@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Detail - Deven Pujari's Portfolio">
+    <title>Project Name | Deven Pujari</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../port.css">
+    <style>
+        /* Additional styles for project detail page */
+        .project-header {
+            height: 50vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../project-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+        }
+        
+        .project-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-subtitle {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+        }
+        
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        
+        .project-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .project-section {
+            margin-bottom: 3rem;
+        }
+        
+        .project-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .project-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .project-img-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .tech-tag {
+            background: rgba(0, 255, 255, 0.1);
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .tech-tag:hover {
+            background: var(--accent-color);
+            color: var(--primary-color);
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        
+        .features-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        
+        .features-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 2rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo"><span>DE</span>EP</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class='bx bx-menu'></i>
+        </label>
+        <nav class="navbar">
+            <a href="../index.html#" class="nav-link">Home</a>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../index.html#education" class="nav-link">Education</a>
+            <a href="../index.html#skills" class="nav-link">Skills</a>
+            <a href="../index.html#projects" class="nav-link active">Projects</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <section class="project-header">
+        <div>
+            <h1 class="project-title">Project Name</h1>
+            <p class="project-subtitle">Project Category / Technology</p>
+            <div class="project-links">
+                <a href="#" class="btn resume-btn" target="_blank">
+                    <i class='bx bx-link-external'></i> Live Demo
+                </a>
+                <a href="#" class="btn contact-btn" target="_blank">
+                    <i class='bx bxl-github'></i> Source Code
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-container">
+        <a href="../index.html#projects" class="back-link">
+            <i class='bx bx-arrow-back'></i> Back to All Projects
+        </a>
+        
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>Detailed description of the project. Explain what the project does, why you built it, and what problem it solves. This should be comprehensive and provide context for the viewer.</p>
+            
+            <div class="project-img-gallery">
+                <img src="../project-image1.jpg" alt="Project Image 1" class="gallery-img">
+                <img src="../project-image2.jpg" alt="Project Image 2" class="gallery-img">
+                <img src="../project-image3.jpg" alt="Project Image 3" class="gallery-img">
+            </div>
+        </div>
+        
+        <div class="project-section">
+            <h2>Technologies Used</h2>
+            <p>A brief description of the technology stack and tools used in the project.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">MySQL</span>
+                <!-- Add or remove technologies as needed -->
+            </div>
+        </div>
+        
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                <li>Feature 1: Detailed description of this feature and its benefits.</li>
+                <li>Feature 2: Detailed description of this feature and its benefits.</li>
+                <li>Feature 3: Detailed description of this feature and its benefits.</li>
+                <li>Feature 4: Detailed description of this feature and its benefits.</li>
+                <li>Feature 5: Detailed description of this feature and its benefits.</li>
+            </ul>
+        </div>
+        
+        <div class="project-section">
+            <h2>Development Process</h2>
+            <p>An explanation of how you approached building this project, challenges you faced, and how you overcame them. This section gives insight into your problem-solving abilities and technical skills.</p>
+            <p>Include information about the design process, architecture decisions, and any interesting implementation details.</p>
+        </div>
+        
+        <div class="project-section">
+            <h2>What I Learned</h2>
+            <p>Reflect on what you learned during the development of this project. This could include new technologies, approaches, or insights that you gained.</p>
+        </div>
+        
+        <div class="project-section">
+            <h2>Future Improvements</h2>
+            <p>Outline any plans for future enhancements or features that you would like to add to the project. This shows that you are forward-thinking and committed to ongoing improvement.</p>
+        </div>
+        
+        <a href="../index.html#projects" class="back-link">
+            <i class='bx bx-arrow-back'></i> Back to All Projects
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/devenpujari" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://instagram.com/deven_pujari" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://linkedin.com/in/devenpujari" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://wa.me/919876543210" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <p class="copyright">© 2024 Deven | All Rights Reserved | Deven Pujari</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <script src="../script.js"></script>
+</body>
+</html>
